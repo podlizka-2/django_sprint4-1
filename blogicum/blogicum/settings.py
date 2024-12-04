@@ -29,7 +29,6 @@ STATICFILES_DIRS = [
 ]
 
 INSTALLED_APPS = [
-    'django_bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,12 +36,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
-    'pages.apps.PagesConfig', 
-]
-
-MIDDLEWARE = [
+    'pages.apps.PagesConfig',
+    'django_bootstrap5',
+]                                                                                                   
+MIDDLEWARE = [ 
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',  
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
