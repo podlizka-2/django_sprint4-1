@@ -189,6 +189,3 @@ def edit_profile(request):
         return redirect('blog:profile', request.user)
     context = {'form': form}
     return render(request, 'blog/user.html', context)
-
-
-
